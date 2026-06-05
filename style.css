@@ -29,7 +29,7 @@ z-index:1000;
 color:#081A62;
   text-shadow: 1px 3px  yellow;
   text-decoration:underline;
-font-size:16px;
+font-size:15px;
 font-weight:7000;
 }
 
@@ -211,7 +211,13 @@ background:orange;
 
 .page{
 display:none;
-color: #0D25F4;
+color: #16068D;
+h3{
+    color: #2E09B6;
+}
+p{
+    color: black ;
+}
 }
 
 .page.active{
