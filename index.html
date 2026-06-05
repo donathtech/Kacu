@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+EPIMAQUE Shop SHOES
+</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="logo">
+
+<h1>EPIMAQUE SHOP SHOES</h1>
+
+</div>
+
+<nav id="navMenu">
+
+<a href="#"
+onclick="showPage('home')">
+
+Home
+
+</a>
+
+<a href="#"
+onclick="showPage('modern')">
+
+Modern
+
+</a>
+
+<a href="#"
+onclick="showPage('traditional')">
+
+Traditional
+
+</a>
+
+<a href="#"
+onclick="showPage('future')">
+
+Future
+
+</a>
+
+<a href="#"
+onclick="showPage('contact')">
+
+Contact
+
+</a>
+
+</nav>
+
+<button
+class="menu-btn"
+onclick="toggleMenu()">
+
+l☰l
+
+</button>
+
+</header>
+<main>
+<!-- HOME -->
+
+<section class="page active"
+id="home">
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+Modern Shoe Collection
+</h1>
+
+<p>
+Premium shoes with modern style by Epimaque
+</p>
+
+<button
+onclick="scrollProducts()">
+
+Shop Now
+
+</button>
+
+</div>
+
+</section>
+
+<section class="products"
+id="products">
+
+<h2>
+Trending Shoes
+</h2>
+
+<input
+type="text"
+
+placeholder="Search shoes..."
+
+class="search"
+
+onkeyup="searchShoes()">
+
+<div class="product-container">
+  <div class="card">
+
+<img src='modernairforce.png'>
+
+<div class="card-content">
+
+<h3>
+orginal airforce 
+</h3>
+
+<p>
+30,000 Frw
+</p>
+
+<button
+onclick="showDetails(
+'orginal airforce',
+'Stylish men sneakers.','30,000',
+'modernairforce.png'
+)">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+
+  <!-- card--->
+<div class="card">
+
+<span class="badge hot">
+HOT
+</span>
+
+<img src='ivu.png'>
+
+<div class="card-content">
+
+<h3>
+men shoes
+</h3>
+
+<p>
+25,000 Frw
+</p>
+
+<button
+onclick="showDetails(
+'men shoe1',
+'25,000 Frw',
+'Modern men fashion shoes.',
+'ivu.png'
+)">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+<!--card--->
+<div class="card">
+
+<span class="badge hot">
+HOT
+</span>
+
+<img src='whitesamba.png'>
+
+<div class="card-content">
+
+<h3>
+men Collection
+</h3>
+
+<p>
+30,000 Frw
+</p>
+
+<button
+onclick="showDetails(
+'men Collection2',
+'30,000 Frw',
+'Modern men fashion shoes.',
+'whitesamba.png'
+)">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+<!-- CARD -->
+<div class="card">
+
+<span class="badge hot">
+HOT
+</span>
+
+<img src='kiki1.png'>
+
+<div class="card-content">
+
+<h3>
+women shoes
+</h3>
+
+<p>
+6,000 Frw
+</p>
+
+<button
+onclick="showDetails(
+'women shoe 4',
+'6,000 Frw',
+'Modern women fashion shoes.',
+'kiki1.png'
+)">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+<!---ijjj--->
+<div class="card">
+
+<span class="badge hot">
+HOT
+</span>
+
+<img src='kiki 2.png'>
+
+<div class="card-content">
+
+<h3>
+women shoes
+</h3>
+
+<p>
+5,000 Frw
+</p>
+
+<button
+onclick="showDetails(
+'women shoe 6',
+'5,000 Frw',
+'Modern fashion shoes.',
+'kiki 2.png'
+)">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+<!---ijjj--->
+<div class="card">
+
+<span class="badge hot">
+original
+</span>
+
+<img src='kiki3.png'>
+
+<div class="card-content">
+
+<h3>
+women shoes
+</h3>
+
+<p>
+5,000 Frw
+</p>
+
+<button
+onclick="showDetails(
+'women shoe 8',
+'5,000 Frw',
+'Modern women fashion shoes.',
+'kiki3.png'
+)">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+<!---ijjj--->
+
+
+
+<div class="card">
+
+<span class="badge">
+NEW
+</span>
+
+<img src='shoe2.jpg'>
+
+<div class="card-content">
+
+<h3>
+Nike Air Max
+</h3>
+
+<p>
+6,000 Frw
+</p>
+
+<button
+onclick="showDetails(
+'Nike Air Max',
+'6,000 Frw',
+'Comfortable premium sneakers.',
+'shoe3.jpg'
+)">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+<!-- CARD -->
+  
+
+
+<div class="card">
+
+<span class="badge hot">
+HOT
+</span>
+
+<img src='shoe3.jpg'>
+
+<div class="card-content">
+
+<h3>
+Women Collection
+</h3>
+
+<p>
+8,000 Frw
+</p>
+
+<button
+onclick="showDetails(
+'Women Collection',
+'60,000 Frw',
+'Modern women fashion shoes.',
+'shoe3.jpg'
+)">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+<!-- CARD -->
+
+<div class="card">
+
+<span class="badge">
+NEW
+</span>
+
+<img src='shoe1.jpg'>
+
+<div class="card-content">
+
+<h3>
+Nike Air Max
+</h3>
+
+<p>
+6,000 Frw
+</p>
+
+<button
+onclick="showDetails(
+'Nike Air Max',
+'6,000 Frw',
+'Comfortable sneakers.',
+'shoe1.jpg'
+)">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+<!-- hhhj--->
+
+<!-- CARD -->
+
+<div class="card">
+
+<img src='shoe4.jpg'>
+
+<div class="card-content">
+
+<h3>
+Men Sneakers
+</h3>
+
+<p>
+6,000 Frw
+</p>
+
+<button
+onclick="showDetails(
+'Men Sneakers',
+'Stylish men sneakers.','6,000',
+'shoe4.jpg'
+)">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</section>
+
+<!-- MODERN -->
+
+<section class="page"
+id="modern">
+
+<section class="products">
+
+<h2>
+Modern Shoes
+</h2>
+
+<div class="product-container">
+<!---kkjj--->
+<div class="card">
+
+<span class="badge hot">
+  original 
+</span>
+
+<img src='campus.png'>
+
+<div class="card-content">
+
+<h3>
+men Collection
+</h3>
+
+<p>
+14,000 Frw
+</p>
+
+<button
+onclick="buyNow(
+'men Collection campus'
+)">
+
+buy now 
+
+</button>
+
+</div>
+
+</div>
+  <div class="card">
+
+<span class="badge hot">
+HOT
+</span>
+<!---kkjj--->
+<img src='blue.png'>
+
+<div class="card-content">
+
+<h3>
+men Collection
+</h3>
+
+<p>
+40,000 Frw
+</p>
+
+<button
+onclick="buyNow(
+'men Collectionblue1'
+)">
+
+buy now 
+
+</button>
+
+</div>
+
+</div>
+<!---hjk-->
+  <div class="card">
+
+<img src='ivu1.png'>
+
+<div class="card-content">
+
+<h3>
+Men shoes
+</h3>
+
+<p>
+60,000 Frw
+</p>
+
+<button
+onclick="buyNow(
+'Men Sneakers 4'
+)">
+
+buy now 
+
+</button>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<img src='kacu4.png'>
+
+<div class="card-content">
+
+<h3>
+Modern Nike
+</h3>
+
+<p>
+120,000 Frw
+
+</p>
+<button
+onclick="buyNow('Modern Nike')">
+
+Buy Now
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</section>
+
+<!-- TRADITIONAL -->
+
+<section class="page"
+id="traditional">
+
+<section class="products">
+
+<h2>
+Traditional Shoes
+</h2>
+
+<div class="product-container">
+  <div class="card">
+
+<span class="badge hot">
+orginal
+</span>
+
+<img src='kacu3.png'>
+
+<div class="card-content">
+
+<h3>
+Women Collection
+</h3>
+
+<p>
+8,000 Frw
+</p>
+
+<button
+onclick="buyNow(
+'Women Collection'
+)">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+<!---kkjj--->
+
+  <div class="card">
+
+<span class="badge hot">
+HOT
+</span>
+
+<img src='back image.png'>
+
+<div class="card-content">
+
+<h3>
+Women Collection
+</h3>
+
+<p>
+5,000 Frw
+</p>
+
+<button
+onclick="buyNow(
+'Women Collection 2'
+)">
+
+buy now 
+
+</button>
+
+</div>
+
+</div>
+<!---Kkj--->
+<div class="card">
+
+<img src='kacu5.png'>
+
+<div class="card-content">
+
+<h3>
+Leather Classic
+</h3>
+
+<p>
+7,000 Frw
+</p>
+
+<button
+onclick="buyNow('Leather Classic')">
+
+Buy Now
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</section>
+
+<!-- FUTURE -->
+
+<section class="page"
+id="future">
+
+<section class="products">
+
+<h2>
+Future Shoes
+</h2>
+<div class="product-container">
+  <div class="card">
+
+<img src='koko.png'>
+
+<div class="card-content">
+
+<h3>
+Men Sneakers 5
+</h3>
+
+<p>
+26,000 Frw
+</p>
+
+<button
+onclick="buyNow('men sneaker 5')">
+
+buy Now
+
+</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src='koko1.png'>
+
+<div class="card-content">
+
+<h3>
+Men Sneakers 3
+</h3>
+
+<p>
+15,000 Frw
+</p>
+
+<button
+onclick="buyNow(
+'Men Sneaker 3')">
+
+buy Now 
+
+</button>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<img src="kacu6.png">
+
+<div class="card-content">
+
+<h3>
+Smart Shoes
+</h3>
+
+<p>
+8,000 Frw
+</p>
+
+<button
+onclick="buyNow('Smart Shoes')">
+
+Buy Now
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="page"
+id="contact">
+
+<section class="products">
+
+<h2>
+Contact Us
+</h2>
+<img src="epimaque.png" alt="business owner" />
+<p>
+Phone:+250784169176
+</p>
+
+<p>
+musanze - north- Rwanda
+</p>
+
+<p>
+Email: manishimweeoimaque@gmail.com
+</p>
+
+</section>
+
+</section>
+
+<!-- DETAILS POPUP -->
+
+<div class="details-box"
+id="detailsBox">
+
+<div class="details-content">
+
+<span class="close"
+onclick="closeDetails()">
+
+x
+
+</span>
+
+<img
+id="detailImage"
+src=""
+alt="shoe image">
+
+<h2 id="detailTitle"></h2>
+
+<p id="detailPrice"></p>
+
+<p id="detailDescription"></p>
+
+<button
+class="whatsapp-btn"
+onclick="buyNow(
+document.getElementById('detailTitle').innerHTML
+)">
+
+Buy Now
+
+</button>
+
+</div>
+
+</div>
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+href="https://wa.me/+250784169176"
+target="_blank"
+class="floating-whatsapp">
+
+💬
+
+</a>
+</main>
+
+
+<script src="script.js"></script>
+    
+</body>
+</html>
