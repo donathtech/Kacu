@@ -275,7 +275,7 @@ margin-top:15px;
 
 .floating-whatsapp{
 position:fixed;
-bottom:20px;
+bottom:25px;
 width:60px;
 background:#25d366;
 color:white;
@@ -355,7 +355,7 @@ object-fit:cover;
 }
 footer{
     left:0;
-    bottom:52px;
+    bottom:65px;
     position: fixed ;
     align-items: center;
     text-align:center;
