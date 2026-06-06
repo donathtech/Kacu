@@ -6,7 +6,8 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#f4f4f4;
+    
+background: white;
 overflow-x:hidden;
 }
 
@@ -18,18 +19,18 @@ top:0;
 width:100%;
 display:flex;
 justify-content:space-between;
-align-items:center;
+align-items:center;border-radius: 0px 0px 50px 50px;
 padding:20px 8%;
-background: linear-gradient(#072DC3,#072DC3, yellow,green);
-backdrop-filter:blur(10px);
+background: linear-gradient(#0E24DE,#0E1DDE4F,#10E70B);
+backdrop-filter:blur(0px);
 z-index:1000;
 }
 
 .logo{
-color:#081A62;
-  text-shadow: 1px 3px  yellow;
+color: white;
+  text-shadow: 1px 2px  #0A0CD3;
   text-decoration:underline;
-font-size:15px;
+font-size:12px;
 font-weight:7000;
 }
 
@@ -52,12 +53,13 @@ color:#D91BB2;
 
 .menu-btn{
 display:none;
-background:#0DF814;
-border:0.9px double #AE0EB6;
-box-shadow: 0 3px 0 0.2px #031F8F;
- border-radius: 7px;
- color: white;
-font-size:30px;
+background: white;
+border: 3px solid #C60EDE;
+border-bottom-style: none;
+box-shadow: 0 4px 0.4px #0D52F8;
+ border-radius: 5px;
+ color: black;
+font-size:25px;
 cursor:pointer;
 }
 
@@ -268,24 +270,22 @@ cursor:pointer;
 
 .whatsapp-btn{
 background:#05EC10;
-border:3px solid #0B05EC;
 margin-top:15px;
 }
 
 .floating-whatsapp{
 position:fixed;
 bottom:20px;
-height:20px;
 width:60px;
-height:20px;
 background:#25d366;
 color:white;
 display:flex;
+border:3px solid #0B05EC;
 justify-content:center;
 align-items:center;
 border-radius:50%;
-font-size:30px;
-text-decoration:none;
+font-size:27px;
+text-decoration: none ;
 }
 
 /* FOOTER */
@@ -352,4 +352,38 @@ img{
 width:350px;
 height:600px;
 object-fit:cover;
+}
+footer{
+    left:0;
+    bottom:52px;
+    position: fixed ;
+    align-items: center;
+    text-align:center;
+    border-radius:12px;
+    background: none;
+    font-size:30px;
+
+    
+}
+footer p{
+    margin:10px 1px;
+}
+footer a {
+    width:60px;
+    text-decoration: none;
+    text-shadow:1.9px 1px yellow;
+    color: white ;
+    background:#4801FFBF;
+    border:2px  double #01FF0C;
+    border-radius:10px;
+    
+}
+h4{
+    bottom:2px;
+    color: white ;
+    width:100%;
+    position:fixed;
+background: green;
+border-radius:66px 66px 0px 0px;
+text-align: center;
 }
