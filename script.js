@@ -124,19 +124,26 @@ closeDetails();
 
 }
 
-function buyNow(product){
+function buyNow(name, imagePath, price) {
+  const phone = "250784169176";
+  
+  const imageUrl =
+    `${window.location.origin}/${imagePath}`;
+  
+  const message =
+    `🛒 NEW ORDER
 
-alert(
-"You selected:\n\n" +
-product +
-"\n\nContinue to WhatsApp order."
-);
+👟 Product: ${name}
 
-window.open(
-"https://wa.me/+250784169176",
-"_blank"
-);
-
+🖼 Image:
+${imageUrl}
+💰 Price: ${price} RWF
+`;
+  
+  window.open(
+    `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
+    "_blank"
+  );
 }
 
 function searchShoes(){
