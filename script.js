@@ -128,7 +128,7 @@ function buyNow(name, imagePath, price) {
   const phone = "250784169176";
   
   const imageUrl =
-    `${window.location.origin}\n\n/${imagePath}\n`;
+    `${imagePath}\n`;
   
   const message =
     `🛒 NEW ORDER
