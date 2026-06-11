@@ -42,7 +42,7 @@ window.onclick = function (e) {
   }
 };
 
-function buyNow(name, imagePath, price) {
+function Order(name, imagePath, price) {
   const phone = "250784169176";
   const message =
     "🛒 NEW ORDER:\nProduct: " +

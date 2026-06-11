@@ -42,7 +42,7 @@
 
       <section class="products" id="products">
         <h2>Trending Shoes</h2>
-        <input type="text" placeholder="Search shoes..." class="search" onkeyup="searchShoes()">
+        <input type="text" placeholder="🔍Search shoes..." class="search" onkeyup="searchShoes()">
 
         <div class="product-container">
 
@@ -190,7 +190,7 @@
             <div class="card-content">
               <h3>men Collection</h3>
               <p>14,000 Frw</p>
-              <button onclick="buyNow('men Collection', 'campus.png', 14000)">Buy Now</button>
+              <button onclick="showDetails('men Collection','14,000 Frw','modern campus for everyone','campus.png')">view details</button>
             </div>
           </div>
 
@@ -198,9 +198,9 @@
             <span class="badge hot">HOT</span>
             <img src="blue.png">
             <div class="card-content">
-              <h3>men Collection</h3>
+              <h3>men Collectiokkkkkkkn</h3>
               <p>40,000 Frw</p>
-              <button onclick="buyNow('men Collection', 'blue.png', 40000)">Buy Now</button>
+              <button onclick="showDetails('Nike Air Max', '40,000 Frw', 'Comfortable sneakers.', 'shoe1.jpg')">view details</button>
             </div>
           </div>
 
@@ -208,8 +208,8 @@
             <img src="ivu1.png">
             <div class="card-content">
               <h3>Men shoes</h3>
-              <p>60,000 Frw</p>
-              <button onclick="buyNow('Men shoes', 'ivu1.png', 60000)">Buy Now</button>
+              <p>40,000 Frw</p>
+              <button onclick="showDetails('Men shoes',40,000 Frw','modern suppress for men',ivu1.png')">view details</button>
             </div>
           </div>
 
@@ -218,8 +218,8 @@
             <div class="card-content">
               <h3>Modern top</h3>
               <p>5,000 Frw</p>
-              <!-- NOTE: HTML showed 5,000 Frw but buyNow had 20000 — using 20000 as likely correct -->
-              <button onclick="buyNow('Modern Nike', 'kacu4.png', 20000)">Buy Now</button>
+              
+              <button onclick="showDetails('Modern Nike','5,000 Frw','modrern women top', 'kacu4.png')">view details</button>
             </div>
           </div>
 
@@ -239,7 +239,7 @@
             <div class="card-content">
               <h3>Women Collection 2</h3>
               <p>8,000 Frw</p>
-              <button onclick="buyNow('Women Collection 2', 'kacu3.png', 8000)">Buy Now</button>
+              <button onclick="showDetails('Women Collection 2','8,000 Frw','modrrn women shoes', 'kacu3.png')">view details</button>
             </div>
           </div>
 
@@ -249,8 +249,8 @@
             <div class="card-content">
               <h3>Women &amp; men Collection</h3>
               <p>8,000 Frw</p>
-              <!-- NOTE: HTML showed 8,000 Frw but buyNow had 5000 — fixed to match displayed price -->
-              <button onclick="buyNow('Women & men Collection', 'back image.png', 8000)">Buy Now</button>
+            
+              <button onclick="showDetails('Women & men Collection','8,000 Frw','modern sneaker', 'back image.png')">view details</button>
             </div>
           </div>
 
@@ -259,7 +259,7 @@
             <div class="card-content">
               <h3>Leather Classic</h3>
               <p>7,000 Frw</p>
-              <button onclick="buyNow('Leather Classic', 'kacu5.png', 7000)">Buy Now</button>
+              <button onclick="showDetails('Leather Classic','7,000 Frw','women shoes', 'kacu5.png')">view details</button>
             </div>
           </div>
 
@@ -278,7 +278,7 @@
             <div class="card-content">
               <h3>Men Sneakers 5</h3>
               <p>26,000 Frw</p>
-              <button onclick="buyNow('Men Sneakers 5', 'koko.png', 26000)">Buy Now</button>
+              <button onclick="showDetails('Men Sneakers 5','26,000 Frw','men sneaker bu fit','koko.png')">view details</button>
             </div>
           </div>
 
@@ -287,7 +287,7 @@
             <div class="card-content">
               <h3>Men Sneakers 3</h3>
               <p>15,000 Frw</p>
-              <button onclick="buyNow('Men Sneakers 3', 'koko1.png', 15000)">Buy Now</button>
+              <button onclick="showDetails('Men Sneakers 3','15,000 Frw' ,'shoes for men', 'koko1.png')">view details</button>
             </div>
           </div>
 
@@ -296,7 +296,7 @@
             <div class="card-content">
               <h3>Smart Shoes</h3>
               <p>8,000 Frw</p>
-              <button onclick="buyNow('Smart Shoes', 'kacu6.png', 8000)">Buy Now</button>
+              <button onclick="showDetails('Smart Shoes','8,000 Frw','better shoes', 'kacu6.png')">view details</button>
             </div>
           </div>
 
@@ -325,20 +325,20 @@
       <h2 id="detailTitle"></h2>
       <p id="detailPrice"></p>
       <p id="detailDescription"></p>
-      <!-- FIXED: now passes all 3 arguments to buyNow -->
-      <button class="whatsapp-btn" onclick="buyNow(
+    
+      <button class="order-button" onclick="Order(
         document.getElementById('detailTitle').innerHTML,
         document.getElementById('detailImage').src,
         document.getElementById('detailPrice').innerHTML
-      )">Buy Now</button>
+      )">Order 🛒 click here</button>
     </div>
   </div>
 
-  <!-- FLOATING WHATSAPP -->
-  <a href="https://wa.me/+250784169176" target="_blank" class="floating-whatsapp">WhatsApp</a>
 
   <footer>
-    <p><a href="https://www.tiktok.com/@manishimweepimaqu?lang=en&is_from_webapp=1&sender_device=mobile&sender_web_id=7647955511392749072">TikTok 1</a></p>
+   <p><a href="https://wa.me/+250784169176" target="_blank" >WhatsApp</a></p>
+
+    <p><a href="https://www.tiktok.com/@manishimweepimaqu?lang=en&is_from_webapp=1&sender_device=mobile&sender_web_id=7647955511392749072" target"_blank">Our TikTok</a></p>
   </footer>
 
   <h4>&copy; 2026 Donath</h4>
@@ -346,4 +346,4 @@
   <script src="script.js"></script>
 
 </body>
-</html>
+</html>        
